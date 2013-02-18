@@ -1,0 +1,44 @@
+button.increment
+{
+ width: 25px;
+ line-height: 0.5em;
+ vertical-align:middle;
+}
+button.skip
+{
+ font-family: Helvetica,Arial,sans-serif;
+ font-size: 20px;
+ line-height: 1.4em;
+}
+input,div
+{ 
+ /*padding: 10px;*/
+ margin: 15px auto;
+ font-size: 25px;
+ font-weight: bold;
+ line-height: 2.0em;
+}
+div.container {  width: 500px; background: #aab; }
+p,span.elapsed { text-align: center; }
+/*table { width: 500px; border-padding: 0px; border-spacing: 0px; }*/
+table {
+ position: relative;
+ clear: both;
+ margin: 0 auto;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -ms-border-radius: 10px;
+ -o-border-radius: 10px;
+ border-radius: 10px;
+}
+td.col1 { width: 250px; font-family: Helvetica,Arial,sans-serif; font-size: 20px; }
+td.col2 { width: 250px; text-align: right; font-size: 20px; }
+tbody tr.zebra:nth-child(odd) { background-color: #ccc; }
+
+.footer 
+{
+ background-color: #333;
+ color: #fff;
+ font-size: 14px;
+ font-weight: bold;
+}
