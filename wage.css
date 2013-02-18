@@ -1,0 +1,261 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.clear { clear:both; }
+
+#floater {
+	float:left;
+	height: 50%;
+	width: 100%;
+	min-height: 229px;
+	margin-bottom: -229px;
+}
+
+#container {
+	position: relative;
+	clear: both;
+	width: 360px;
+	margin: 0 auto;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	-ms-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	-o-box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	box-shadow: 5px 5px 16px rgba(0,0,0,0.6);
+	
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-ms-transform: rotate(0);
+	-o-transform: rotate(0);
+	transform: rotate(0);
+	
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	-ms-transition: -ms-transform 0.5s;
+	-o-transition: -o-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+header {
+	background: #222;
+	padding: 15px;
+	text-align: center;
+	border: 3px solid black;
+	border-top-color: rgba(255,255,255,0.2);
+	border-left-color: rgba(255,255,255,0.2);
+	
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-ms-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+header p {
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 20px;
+	userinput: block;
+	float:left;
+	height: 28px;
+	line-height: 34px;
+	margin: 0;
+}
+
+.body {
+	background: #aab;
+	padding: 15px;
+	border: 3px solid rgba(0,0,0,0.4);
+	border-top: 0;
+	border-left-color: rgba(255,255,255,0.4);
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+
+#userinput, #currency, #userpanel {
+	clear: both;
+	border: 2px solid #000;
+	border-bottom-color: #444;
+	border-right-color: #444;
+	margin: 0 auto;
+	font-size: 40px;
+	padding: 2px;
+	color: rgba(0,0,0,0.5);
+	line-height: 41px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	height: 41px;
+}
+
+#userpanel {
+	position: relative;
+	text-align: left;
+}
+#userinput {
+	text-align: right;
+	position: absolute;
+	top: 0;
+	left: 16px;
+	border: 0;
+	width: 300px;
+}
+#currency {
+	background: #fff;
+	text-align: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	width: 16px;
+}
+
+button {
+	background: #141414; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #141414 12%, #1c1c1c 48%, #2d2d2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(12%,#141414), color-stop(48%,#1c1c1c), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #141414 12%,#1c1c1c 48%,#2d2d2d 100%); /* W3C */
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	
+	border: 0;
+	border-top: 2px solid rgba(255,255,255,0.2);
+	border-left: 2px solid rgba(255,255,255,0.2);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-right: 2px solid rgba(0,0,0,0.2);
+	margin: 4px;
+	
+	-webkit-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-moz-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-ms-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	-o-box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	box-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000, 2px 2px 1px #000, 4px 4px 2px rgba(255,255,255,0.6);
+	
+	userinput: block;
+	float: left;	
+	font-weight: bold;
+	cursor: pointer;
+	color: #ccc;
+	font-family: verdana;
+	padding: 0;
+}
+
+button.red {
+	background: #870000; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #870000 26%, #b20000 83%, #c10000 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(26%,#870000), color-stop(83%,#b20000), color-stop(100%,#c10000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #870000 26%,#b20000 83%,#c10000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #870000 26%,#b20000 83%,#c10000 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #870000 26%,#b20000 83%,#c10000 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #870000 26%,#b20000 83%,#c10000 100%); /* W3C */
+}
+
+button.gray {
+	background: #292929; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #292929 12%, #383838 48%, #5C5C5C 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(12%,#292929), color-stop(48%,#383838), color-stop(100%,#5C5C5C)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #292929 12%,#383838 48%,#5C5C5C 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #292929 12%,#383838 48%,#5C5C5C 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #292929 12%,#383838 48%,#5C5C5C 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #292929 12%,#383838 48%,#5C5C5C 100%); /* W3C */
+}
+
+button.blue {
+	background: #000087; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #000087 100%, #0000b2 83%, #0000c1 26%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(100%,#000087), color-stop(83%,#0000b2), color-stop(26%,#0000c1)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #000087 100%,#0000b2 83%,#0000c1 26%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #000087 100%,#0000b2 83%,#0000c1 26%); /* Opera 12+ */ 
+	background: -ms-radial-gradient(center, ellipse cover, #000087 100%,#0000b2 83%,#0000c1 26%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #000087 100%,#0000b2 83%,#0000c1 26%); /* W3C */
+}
+
+button:active, button.down {
+	-webkit-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-moz-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-ms-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	-o-box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+	box-shadow: -3px -3px 1px #000, -3px 1px 1px #000, 1px -3px 1px #000, 1px 1px 1px #000, 3px 3px 2px rgba(255,255,255,0.6);
+}
+
+button:hover, button.highlight {
+	-webkit-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-moz-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-ms-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	-o-text-shadow: 0 0 5px rgba(255,255,220,0.6);
+	text-shadow: 0 0 5px rgba(255,255,220,0.6);
+}
+
+.increment {
+	font-size: 18px;
+	width: 80px;
+	margin-left: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.action {
+	font-size: 26px;
+	width: 150px;
+	margin-top: 20px;
+}
+
+.time {
+	text-align: left;
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#time {
+	text-align: right;
+	margin-left: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#fullscreen { 
+	font-size:200px; 
+  	display: none;
+  	width: 100%;
+  	height: 100%;
+  	background: inherit;
+	cursor: pointer;
+}
+
+tr.odd { 
+	background-color: #f0f5fe; 
+}
+
+tr.even { 
+	background-color: #ccc; 
+}
+
+tr.odd:hover, tr.even:hover { 
+	background-color: #0080EA;
+	color: #fff;
+	cursor: pointer;
+}
