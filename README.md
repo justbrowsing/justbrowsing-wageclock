@@ -3,10 +3,11 @@ WageClock web-app for JustBrowsing
 Counts up earned hourly wage by second, minute, total
 Counts down salary wage by secound, minute, hour
 
-Demo page: http://justbrowsing.github.com/justbrowsing-wageclock/
-
+Demo page: https://justbrowsinglinux.com/justbrowsing-wageclock/
 
 Changelog:
+2022-02-06
+* Update demo URL
 
 2013-01-28
 * Revamped UI from scratch
